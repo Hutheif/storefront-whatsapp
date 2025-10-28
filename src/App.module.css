@@ -1,0 +1,401 @@
+/* App.module.css */
+
+/* Animations */
+.runningTime {
+  animation: runningTime 7s linear forwards;
+}
+
+.fadeIn {
+  animation: fadeIn 1s ease-in-out 0.3s forwards;
+}
+
+.fadeInDelay1 {
+  animation: fadeIn 1s ease-in-out 0.6s forwards;
+}
+
+.fadeInDelay2 {
+  animation: fadeIn 1s ease-in-out 0.9s forwards;
+}
+
+.fadeInDelay3 {
+  animation: fadeIn 1s ease-in-out 1.2s forwards;
+}
+
+@keyframes runningTime {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(0, 100px);
+    filter: blur(33px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+    filter: blur(0);
+  }
+}
+
+/* Carousel Item Positions */
+.carouselItemMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
+.carouselItemPreview1 {
+  position: absolute;
+  top: 80%;
+  left: 67%;
+  width: 180px;
+  height: 250px;
+  transform: translateY(-70%);
+}
+
+.carouselItemPreview2 {
+  position: absolute;
+  top: 80%;
+  left: calc(67% + 200px);
+  width: 180px;
+  height: 250px;
+  transform: translateY(-70%);
+}
+
+.carouselItemPreview3 {
+  position: absolute;
+  top: 80%;
+  left: calc(67% + 400px);
+  width: 180px;
+  height: 250px;
+  transform: translateY(-70%);
+}
+
+.carouselItemPreview4 {
+  position: absolute;
+  top: 80%;
+  left: calc(67% + 600px);
+  width: 180px;
+  height: 250px;
+  transform: translateY(-70%);
+}
+
+.carouselItemHidden {
+  position: absolute;
+  top: 80%;
+  left: calc(67% + 800px);
+  width: 180px;
+  height: 250px;
+  transform: translateY(-70%);
+  opacity: 0;
+}
+
+/* Base carousel item styles */
+.carouselItem {
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  background-size: cover;
+  background-position: center;
+  z-index: 100;
+  transition: all 1s ease-in-out;
+  flex-shrink: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 999px) {
+  .content {
+    left: 50px;
+  }
+  .title,
+  .name {
+    font-size: 70px;
+  }
+  .des {
+    font-size: 16px;
+  }
+  .cartOverlay {
+    width: 350px;
+  }
+  .searchBox {
+    width: 200px;
+  }
+  .searchBox:focus {
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .searchContainer .searchBox {
+    display: none;
+  }
+  .searchToggle {
+    display: block;
+  }
+  .searchIcon {
+    display: none;
+  }
+  .searchResults {
+    width: 280px;
+    left: -90px;
+    max-height: 250px;
+    top: calc(100% + 15px);
+  }
+}
+
+@media (max-width: 690px) {
+  .logo {
+    font-size: 36px;
+  }
+  .content {
+    top: 40%;
+    left: 30px;
+  }
+  .title,
+  .name {
+    font-size: 45px;
+  }
+  .cartOverlay {
+    width: 100%;
+  }
+  .headerRight {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .logo {
+    font-size: 28px;
+  }
+  .content {
+    left: 20px;
+    width: 90%;
+  }
+  .title,
+  .name {
+    font-size: 35px;
+  }
+  .des {
+    font-size: 14px;
+  }
+  .arrows {
+    right: 30%;
+  }
+  .cartIcon {
+    font-size: 20px;
+  }
+  .searchToggle {
+    font-size: 18px;
+  }
+  .searchResults {
+    width: 300px;
+    left: -110px;
+  }
+}
+
+.progressBar {
+  width: 0%;
+  height: 100%;
+  background: #ff4d94;
+  transition: width 7s linear;
+}
+
+.progressBar.paused {
+  animation-play-state: paused;
+  transition: none;
+}
+
+.progressBar {
+  width: 100%;
+  height: 100%;
+  background: #ff4d94;
+  animation: runningTime 7s linear forwards;
+}
+
+@keyframes runningTime {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.progressBar.paused {
+  animation-play-state: paused;
+}
+
+/* 🌸=============================
+   SECOND HERO SECTION STYLES
+==============================*/
+
+.secondHero {
+  background-color: #000;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.secondHero h2.queensTitle {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  color: #ff4d94;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.carouselContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.carouselContainer button {
+  background-color: transparent;
+  color: #ff4d94;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.carouselContainer button:hover {
+  transform: scale(1.2);
+}
+
+.carouselSlide {
+  width: 280px;
+  height: 340px;
+  background-color: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 77, 148, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carouselSlide img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.carouselSlide h3 {
+  margin-top: 0.8rem;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.carouselSlide p {
+  color: #ff4d94;
+  margin: 0.3rem 0;
+  font-weight: bold;
+}
+
+.carouselSlide button {
+  background-color: #ff4d94;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.carouselSlide button:hover {
+  background-color: white;
+  color: #ff4d94;
+}
+
+/* 🌸 Product Grid */
+.secondHeroGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.secondHeroCard {
+  background-color: #111;
+  border-radius: 16px;
+  padding: 1rem;
+  transition: all 0.3s;
+  box-shadow: 0 0 15px rgba(255, 77, 148, 0.15);
+}
+
+.secondHeroCard:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(255, 77, 148, 0.3);
+}
+
+.secondHeroCard img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 0.6rem;
+}
+
+.secondHeroCard h4 {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.secondHeroCard p {
+  color: #ff4d94;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.secondHeroCard button {
+  width: 100%;
+  background-color: #ff4d94;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.secondHeroCard button:hover {
+  background-color: white;
+  color: #ff4d94;
+}
+
+/* 🌸 Responsive */
+@media (max-width: 768px) {
+  .secondHero {
+    padding: 3rem 1rem;
+  }
+  .carouselSlide {
+    width: 220px;
+    height: 280px;
+  }
+  .secondHero h2.queensTitle {
+    font-size: 2.2rem;
+  }
+}
