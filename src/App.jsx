@@ -514,7 +514,7 @@ export default function App() {
       {/* ✅ FIXED: WhatsApp Button */}
       <button
         onClick={sendWhatsAppOrder}
-        className="fixed bottom-4 left-4 right-4 md:bottom-8 md:left-8 md:right-auto bg-[#25D366] hover:bg-[#1da851] text-white px-6 py-3 rounded-full font-semibold flex items-center justify-center gap-3 shadow-2xl z-[9999] transition-all duration-300 hover:scale-105 text-sm md:text-base"
+        className="fixed bottom-4 left-4 right-4 md:bottom-8 md:left-8 md:right-auto bg-[#25D366] hover:bg-[#1da851] text-white px-3 py-1 rounded-full font-semibold flex items-center justify-center gap-3 shadow-2xl z-[9999] transition-all duration-300 hover:scale-105 text-sm md:text-base"
       >
         <span className="text-xl">💬</span>
         Available on WhatsApp
@@ -626,6 +626,10 @@ export default function App() {
         addToCart={addToCart}
         sendSingleProductWhatsApp={sendSingleProductWhatsApp}
       />
+      <footer className="text-center text-gray-500 py-6 text-sm">
+        © {new Date().getFullYear()} QueensBeauty by Hutheifa. All rights
+        reserved.
+      </footer>
     </div>
   );
 }
