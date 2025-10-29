@@ -629,6 +629,11 @@ export default function App() {
       <footer className="text-center text-gray-500 py-6 text-sm">
         © {new Date().getFullYear()} QueensBeauty by Hutheifa. All rights
         reserved.
+        <br />
+        <span>
+          Discover luxury handbags, perfumes, and shoes at unbeatable prices —
+          proudly made for Kenya’s modern woman.
+        </span>
       </footer>
     </div>
   );
