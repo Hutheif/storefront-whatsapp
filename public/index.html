@@ -7,11 +7,17 @@
     <meta name="description"
         content="Discover QueensBeauty — your trusted online store for elegant handbags, perfumes, and shoes in Kenya. Shop exclusive collections and elevate your royal look today." />
 
-    <!-- ✅ Keywords (SEO Boost) -->
     <meta name="keywords"
         content="QueensBeauty, luxury handbags Kenya, designer perfumes Kenya, stylish shoes Nairobi, online beauty shop, women fashion Kenya" />
 
-    <!-- ✅ Open Graph (for social media) -->
+    <!-- ✅ Canonical -->
+    <link rel="canonical" href="https://queensbeauty.netlify.app/" />
+    <meta name="author" content="ANN/Elizabeth" />
+
+    <!-- ✅ Open Graph -->
+    <meta property="og:site_name" content="QueensBeauty" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://queensbeauty.netlify.app/" />
     <meta property="og:title" content="QueensBeauty | Luxury Handbags, Perfumes & Shoes in Kenya" />
     <meta property="og:description"
         content="Shop exclusive handbags, perfumes, and shoes at QueensBeauty. Redefine elegance and embrace your royal beauty." />
@@ -19,12 +25,8 @@
         content="https://qzigaimmzdtubahwcjyr.supabase.co/storage/v1/object/public/product-images/public/1761739730513_Gemini_Generated_Image_giwdn5giwdn5giwd.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:url" content="https://queensbeauty.netlify.app/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="QueensBeauty" />
 
-
-    <!-- ✅ Twitter Cards -->
+    <!-- ✅ Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="QueensBeauty | Luxury Handbags, Perfumes & Shoes" />
     <meta name="twitter:description"
@@ -32,11 +34,22 @@
     <meta name="twitter:image"
         content="https://qzigaimmzdtubahwcjyr.supabase.co/storage/v1/object/public/product-images/public/1761739730513_Gemini_Generated_Image_giwdn5giwdn5giwd.png" />
 
-    <link rel="canonical" href="https://queensbeauty.netlify.app/" />
-    <meta name="author" content="ANN/Elizabeth" />
+    <!-- ✅ Fallback Title (for crawlers that ignore OG) -->
+    <meta itemprop="name" content="QueensBeauty" />
+    <meta itemprop="description"
+        content="Kenya’s premier online store for handbags, perfumes, and shoes — redefining modern luxury for the elegant woman." />
+    <meta itemprop="image"
+        content="https://qzigaimmzdtubahwcjyr.supabase.co/storage/v1/object/public/product-images/public/1761739730513_Gemini_Generated_Image_giwdn5giwdn5giwd.png" />
 
-    <!-- 🔍 Structured Data (Single Clean Version) -->
-    <script type="application/ld+json">
+    <!-- ✅ Prevent Partial (206) Response -->
+    <meta http-equiv="Cache-Control" content="public, max-age=0, must-revalidate" />
+
+    <link rel="icon" href="/favicon.ico" />
+</head>
+
+
+<!-- 🔍 Structured Data (Single Clean Version) -->
+<script type="application/ld+json">
   {
       "@context": "https://schema.org",
       "@type": "Store",
