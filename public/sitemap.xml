@@ -6,8 +6,18 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://queensbeauty.netlify.app/admin</loc>
+    <loc>https://queensbeauty.netlify.app/products</loc>
     <lastmod>2025-10-29</lastmod>
-    <priority>0.3</priority>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://queensbeauty.netlify.app/about</loc>
+    <lastmod>2025-10-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://queensbeauty.netlify.app/contact</loc>
+    <lastmod>2025-10-29</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>
