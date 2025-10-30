@@ -627,7 +627,7 @@ export default function App() {
         sendSingleProductWhatsApp={sendSingleProductWhatsApp}
       />
       <footer className="text-center text-gray-500 py-6 text-sm">
-        © {new Date().getFullYear()} QueensBeauty by Hutheifa. All rights
+        © {new Date().getFullYear()} QueensBeauty by ANN & Pumpkin. All rights
         reserved.
         <br />
         <span>
