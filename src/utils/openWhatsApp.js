@@ -1,6 +1,6 @@
 // src/utils/openWhatsApp.js
 
-export const openWhatsApp = (message, phone = "254714137554") => {
+export const openWhatsApp = (message, phone = "254736984633") => {
   const encoded = encodeURIComponent(message);
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 

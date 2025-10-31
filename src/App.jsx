@@ -5,6 +5,8 @@ import { FiShoppingCart, FiX, FiSearch } from "react-icons/fi";
 import styles from "./App.module.css";
 import CategoryGrid from "./CategoryGrid";
 import { openWhatsApp } from "./utils/openWhatsApp";
+import Contact from "./pages/Contact";
+import { motion } from "framer-motion";
 
 export default function App() {
   const [products, setProducts] = useState([]);
@@ -197,9 +199,9 @@ export default function App() {
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
     if (isMobile) {
-      window.location.href = `whatsapp://send?phone=254714137554&text=${encodedText}`;
+      window.location.href = `whatsapp://send?phone=254736984633&text=${encodedText}`;
     } else {
-      const webUrl = `https://web.whatsapp.com/send?phone=254714137554&text=${encodedText}`;
+      const webUrl = `https://web.whatsapp.com/send?phone=254736984633&text=${encodedText}`;
       window.open(webUrl, "_blank", "width=800,height=600");
     }
   }, [cart]);
@@ -216,9 +218,9 @@ export default function App() {
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
     if (isMobile) {
-      window.location.href = `whatsapp://send?phone=254714137554&text=${encodedText}`;
+      window.location.href = `whatsapp://send?phone=254736984633&text=${encodedText}`;
     } else {
-      const webUrl = `https://web.whatsapp.com/send?phone=254714137554&text=${encodedText}`;
+      const webUrl = `https://web.whatsapp.com/send?phone=254736984633&text=${encodedText}`;
       window.open(webUrl, "_blank", "width=800,height=600");
     }
   }, []);
@@ -626,9 +628,21 @@ export default function App() {
         addToCart={addToCart}
         sendSingleProductWhatsApp={sendSingleProductWhatsApp}
       />
+      {/* 💌 Hero Section #3 - Contact Section */}
+      <motion.section
+        id="hero3"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+        className="relative z-[3] bg-gradient-to-t from-black via-gray-900 to-black text-white"
+      >
+        <Contact />
+      </motion.section>
+
       <footer className="text-center text-gray-500 py-6 text-sm">
-        © {new Date().getFullYear()} QueensBeauty by ANN & Pumpkin. All rights
-        reserved.
+        © {new Date().getFullYear()} QueensBeauty by Quincy & Pumpkin. All
+        rights reserved.
         <br />
         <span>
           Discover luxury handbags, perfumes, and shoes at unbeatable prices —
